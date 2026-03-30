@@ -32,7 +32,7 @@ export default function Navbar() {
           paddingLeft: isScrolled ? "24px" : "48px",
           paddingRight: isScrolled ? "24px" : "48px",
           backgroundColor: isScrolled ? "rgba(29, 29, 31, 0.7)" : "rgba(0, 0, 0, 0)",
-          backdropFilter: isScrolled ? "blur(40px)" : "blur(0px)",
+          backdropFilter: isScrolled ? "blur(19px)" : "blur(0px)",
           borderColor: isScrolled ? "rgba(255, 255, 255, 0.12)" : "rgba(255, 255, 255, 0)",
           borderRadius: "9999px"
         }}
@@ -48,12 +48,12 @@ export default function Navbar() {
           className="text-[#F5F5F7] text-[10px] font-semibold tracking-[0.2em] opacity-90 hover:opacity-100 transition-opacity uppercase z-50 flex items-center gap-2"
         >
           {/* Subtle minimal dot instead of pure text for logo */}
-          <div className="w-1.5 h-1.5 rounded-full bg-white/80"></div>
+
           INZONE H5
         </Link>
 
         {/* Desktop Links (Dock Style) */}
-        <motion.div 
+        <motion.div
           animate={{
             marginLeft: isScrolled ? "48px" : "0px",
             marginRight: isScrolled ? "32px" : "0px",
@@ -96,8 +96,8 @@ export default function Navbar() {
           <Link
             href="#"
             className={`hidden md:inline-flex px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.1em] font-medium transition-all duration-500 ${isScrolled
-                ? "bg-[#F5F5F7] text-black hover:scale-105 active:scale-95 shadow-[0_4px_14px_rgba(255,255,255,0.1)]"
-                : "border border-white/20 text-white hover:bg-white hover:text-black"
+              ? "bg-[#F5F5F7] text-black hover:scale-105 active:scale-95 shadow-[0_4px_14px_rgba(255,255,255,0.1)]"
+              : "border border-white/20 text-white hover:bg-white hover:text-black"
               }`}
           >
             Direct Order

@@ -1,27 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 
-const techSections = [
-  {
-    title: "Symmetric Acoustic Structure",
-    subtitle: "Absolute Control over Airflow",
-    description: "Our unique housing design features a high-grade acoustic structure with symmetrically placed drivers. This ensures precision-engineered airflow, revealing subtle details in the most hectic gameplay.",
-    bg: "bg-primaryAccent/[0.05]"
-  },
-  {
-    title: "360 Spatial Sound for Gaming",
-    subtitle: "Listen to the future of interaction",
-    description: "Using AI-based algorithms and custom HRTF (Head-Related Transfer Function), the INZONE H5 creates a rich soundscape tailored to your head's specific shape. Pinpoint opponents instantly with pinpoint audio clarity.",
-    bg: "bg-secondaryAccent/[0.05]"
-  },
-  {
-    title: "AI Noise Reduction",
-    subtitle: "Crystal Clear Communication",
-    description: "The boom microphone rests securely near your mouth and utilizes an AI-based noise reduction engine. This engine uses over 500 million samples of ambient noise to isolate your voice correctly.",
-    bg: "bg-white/[0.02]"
-  }
-];
-
 export default function TechnologyPage() {
   return (
     <main className="min-h-screen bg-[#000000] pt-32 pb-48 selection:bg-primaryAccent selection:text-white overflow-hidden">
@@ -39,7 +18,7 @@ export default function TechnologyPage() {
             Technology & <br/>Innovation.
           </h1>
           <p className="text-[17px] md:text-2xl text-white/50 font-light max-w-3xl tracking-tight leading-relaxed">
-            The INZONE H5 is more than a headset. It's a precision instrument refined through years of Sony audio research and professional player collaboration.
+            The INZONE H5 is more than a headset. It&apos;s a precision instrument refined through years of Sony audio research and professional player collaboration.
           </p>
         </motion.div>
 

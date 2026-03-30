@@ -1,10 +1,10 @@
 "use client";
 import Scrollytelling from "@/components/Scrollytelling";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 
-const containerVariants: any = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -15,7 +15,7 @@ const containerVariants: any = {
   }
 };
 
-const revealVariants: any = {
+const revealVariants: Variants = {
   hidden: { y: 40, opacity: 0, scale: 0.98 },
   visible: {
     y: 0,
@@ -29,7 +29,7 @@ const revealVariants: any = {
   }
 };
 
-const fadeVariants: any = {
+const fadeVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -160,7 +160,7 @@ export default function Home() {
                   { t: "Flip-to-Mute", d: "Tactile line control." },
                   { t: "Sidetone Adjust", d: "Natural voice feedback." },
                   { t: "Dual-Source Mix", d: "Independent balance." }
-                ].map((f, i) => (
+                ].map((f) => (
                   <div
                     key={f.t}
                     className="bg-black/20 p-6 rounded-3xl border border-white/5"

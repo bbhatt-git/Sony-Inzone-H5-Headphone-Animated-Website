@@ -55,7 +55,7 @@ export default function Scrollytelling() {
         // Ratio based on PHYSICAL buffer pixels
         const hRatio = canvas.width / img.width;
         const vRatio = canvas.height / img.height;
-        let ratio = Math.max(hRatio, vRatio);
+        const ratio = Math.max(hRatio, vRatio);
 
         const renderWidth = img.width * ratio;
         const renderHeight = img.height * ratio;
@@ -101,8 +101,7 @@ export default function Scrollytelling() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.05, 0.15, 0.25], [1, 1, 0, 0]);
   const heroY = useTransform(scrollYProgress, [0, 0.2], [0, -100]);
 
-  // Subtle background hints
-  const gridOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.05, 0.02, 0.05]);
+
 
   return (
     <div ref={containerRef} className="relative h-[2000vh] bg-black">
